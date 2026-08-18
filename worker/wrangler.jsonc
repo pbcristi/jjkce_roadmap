@@ -19,7 +19,7 @@
     {
       "binding": "DB",
       "database_name": "jjkce-community",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "9fed5463-0211-4602-bacc-7159f138ece3",
       "migrations_dir": "migrations"
     }
   ]
