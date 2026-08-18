@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>JJKCE Community Moderation</title>
+<style>
+:root{--bg:#0b0d11;--panel:#161a22;--text:#f0ede6;--muted:#a9aeb8;--line:#343b49;--blue:#77bff0;--red:#e47e7e;--green:#78c990}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{width:min(920px,calc(100% - 24px));margin:32px auto 70px}h1{margin:0 0 8px;font-size:clamp(30px,6vw,48px)}p{color:var(--muted)}.panel,.entry{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:18px;margin-top:16px}label{display:block;font-weight:700;margin:10px 0 6px}input,select,textarea,button{font:inherit}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:9px;background:#0f1218;color:var(--text);padding:10px}textarea{min-height:100px;resize:vertical}button{border:0;border-radius:9px;padding:10px 14px;background:var(--blue);color:#071018;font-weight:800;cursor:pointer}button.danger{background:var(--red);color:#190909}.row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.row button{flex:0 0 auto}.meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px}.suggestion{white-space:pre-wrap;font-size:16px}.status[data-kind="error"]{color:var(--red)}.status[data-kind="success"]{color:var(--green)}[hidden]{display:none!important}@media(max-width:560px){.row{display:block}.row>*{margin-top:8px}.row button{width:100%}}
+</style>
+<script src="community-config.js"></script>
+<script src="admin.js" defer></script>
+</head>
+<body><main class="wrap">
+<h1>Community Moderation</h1>
+<p>This page is for the JJKCE maintainer. The admin token is never stored in the repository and is kept only for this browser session.</p>
+<section class="panel" id="login-panel">
+<form id="admin-login-form">
+<label for="admin-token">Admin token</label>
+<input id="admin-token" type="password" autocomplete="current-password" required>
+<div class="row" style="margin-top:12px"><button type="submit">Unlock moderation</button></div>
+<p id="admin-login-status" class="status" aria-live="polite"></p>
+</form>
+</section>
+<section id="admin-board" hidden>
+<div class="row"><p id="admin-board-status" class="status" aria-live="polite"></p><button id="admin-refresh" type="button">Refresh</button><button id="admin-lock" type="button" class="danger">Lock</button></div>
+<div id="admin-list"></div>
+</section>
+</main></body></html>
