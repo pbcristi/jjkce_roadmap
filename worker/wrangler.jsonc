@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jjkce-community",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-18",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://pbcristi.github.io",
+    "TURNSTILE_EXPECTED_HOSTNAME": "pbcristi.github.io"
+  },
+  "secrets": {
+    "required": [
+      "ADMIN_TOKEN",
+      "TURNSTILE_SECRET_KEY",
+      "RATE_LIMIT_SALT"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jjkce-community",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
