@@ -15,40 +15,40 @@
 <header><div class="wrap">
 <div class="eyebrow">Battle Brothers · Jujutsu Kaisen — Cursed Energy</div>
 <h1>Development Roadmap</h1>
-<p class="lead">A player-facing view of JJKCE's current public release and the systems available now or planned next. Internal development builds stay separate from published versions so roadmap progress is never mistaken for a downloadable release.</p>
+<p class="lead">A player-facing view of JJKCE's current public release and what comes next. Published systems are kept separate from future milestones so roadmap progress is never mistaken for an already available feature.</p>
 <div class="status">
-<div class="box"><span class="label">Current public release</span><strong>v0.21.12</strong></div>
-<div class="box"><span class="label">Current focus</span><strong>v0.22 Cursed Damage Framework</strong></div>
-<div class="box"><span class="label">Roadmap state</span><strong>v0.22 in development</strong></div>
+<div class="box"><span class="label">Current public release</span><strong>v0.22.1</strong></div>
+<div class="box"><span class="label">Current focus</span><strong>v0.23 Basic Curse Ecosystem</strong></div>
+<div class="box"><span class="label">Roadmap state</span><strong>v0.22.1 published · v0.23 planned</strong></div>
 </div>
 </div></header>
 <main class="wrap">
 <section>
 <h2>Where JJKCE is now</h2>
 <div class="current">
-<div class="version">Current public release · v0.21.12</div>
-<h3>Sorcerer Progression Update</h3>
-<p>v0.21.12 remains the current downloadable public release, expanding the original Sorcerer alpha with deeper progression, progressive CE Reserves, natural awakening, ordinary-campaign Sorcerer recruitment, compatibility work, and extensive stabilization.</p>
+<div class="version">Current public release · v0.22.1</div>
+<h3>Technical Hotfix & Cursed Damage Foundation</h3>
+<p>v0.22.1 is the current downloadable public release. It retains the established Sorcerer progression systems while adding technical stabilization and the combat foundation required by future curse enemies.</p>
 <ul>
-<li>Develop Potential, Learning Rate, Tier Mastery, Advancement Credit, Cursed Output, Cursed Resilience, CE Refinement, and Physical Enhancement through play.</li>
-<li>Grow individual Cursed Energy Reserves as a Sorcerer develops, with permanent personal reserve variation and Potential influence.</li>
-<li>Ordinary brothers can naturally awaken through several dangerous combat and campaign situations.</li>
-<li>Rare ordinary settlement recruits can already be Sorcerers, allowing jujutsu to emerge in campaigns that do not begin with The Newly Awakened origin.</li>
-<li>Six Common CE Applications, Pressure, Insight, Negative Surge, experiential learning, campaign/tactical CE UI, and the dedicated Sorcery interface remain the core playable foundation.</li>
+<li>Generated Sorcerer Tier initialization has been stabilized, including a narrow repair path for missing persisted generated tiers.</li>
+<li>The tactical character panel/hotbar refresh path has been hardened against stale delayed updates.</li>
+<li>The Newly Awakened origin has targeted Legends starting-body-armor compatibility while preserving the vanilla fallback.</li>
+<li>The Cursed Damage Framework now distinguishes ordinary physical attacks from CE-infused and cursed-technique damage for future supernatural targets.</li>
+<li>Development/debug menus are disabled in the public configuration.</li>
 </ul>
 </div>
 <div class="current">
-<div class="version">Current development phase · v0.22</div>
-<h3>Cursed Damage Framework & Stabilization</h3>
-<p>The active development phase is establishing the combat rules the future cursed world will depend on. The framework distinguishes ordinary physical damage from curse-valid attacks while preserving the existing Battle Brothers combat pipeline.</p>
+<div class="version">Published foundation · v0.22</div>
+<h3>Cursed Damage Framework</h3>
+<p>The curse-valid damage layer is now part of the public mod. It keeps ordinary Battle Brothers targets on the vanilla damage path while providing explicit semantics for future supernatural targets.</p>
 <ul>
-<li>Ordinary physical attacks are treated separately from damage that is valid against supernatural curse-style targets.</li>
-<li>Qualifying Cursed Infusion attacks and direct cursed techniques form the current curse-valid offensive foundation.</li>
-<li>The framework is being stabilized and regression-tested before actual pure curse enemies and full perception rules are introduced.</li>
-<li>Current development also includes focused generated-Sorcerer progression/tier stabilization and additional optional Legends compatibility work.</li>
+<li>Ordinary physical damage is distinct from CE-infused and cursed-technique damage.</li>
+<li>Cursed Infusion validates its qualifying direct attack rather than creating an extra damage packet.</li>
+<li>Cursed Strike, Cursed Barrage, and attacks under Focused Impact have explicit cursed-technique semantics.</li>
+<li>Actual pure curse enemies and the full curse-perception system are not included yet.</li>
 </ul>
 </div>
-<p class="note"><strong>Important:</strong> v0.22 is a development milestone, not a public download yet. The current published release remains v0.21.12.</p>
+<p class="note"><strong>Current state:</strong> v0.22.1 is published. The next major milestone is the first Basic Curse Ecosystem.</p>
 </section>
 <section>
 <h2>Established public foundation</h2>
@@ -58,31 +58,31 @@
 <article class="card"><div class="top"><span class="tag done">Available</span><h3>Experiential technique learning</h3></div><p>Pressure, technique-specific Insight, natural breakthroughs, and combat-driven acquisition rather than a conventional perk-only progression path.</p></article>
 <article class="card"><div class="top"><span class="tag done">Available</span><h3>Common CE Applications</h3></div><p>Cursed Reinforcement, Cursed Infusion, Cursed Strike, Cursed Barrage, Burst Step, and Focused Impact form the current common-technique foundation.</p></article>
 <article class="card"><div class="top"><span class="tag done">Available</span><h3>Negative Surge</h3></div><p>An involuntary survival phenomenon that can reveal cursed capability under extreme pressure and contributes to a Sorcerer's personal progression.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Campaign Sorcerers</h3></div><p>The Newly Awakened origin remains the dedicated Sorcerer start, while natural awakening and rare generated Sorcerer recruits now allow jujutsu to emerge in ordinary campaigns.</p></article>
+<article class="card"><div class="top"><span class="tag done">Available</span><h3>Campaign Sorcerers</h3></div><p>The Newly Awakened origin remains the dedicated Sorcerer start, while natural awakening and rare generated Sorcerer recruits allow jujutsu to emerge in ordinary campaigns.</p></article>
 </div>
 </section>
 <section>
-<h2>Now available in v0.21.12</h2>
+<h2>Now available in v0.22.1</h2>
 <div class="grid">
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Deeper Sorcerer progression</h3></div><p>Potential, Learning Rate, Tier Mastery, automatic normal Tier advancement, Advancement Credit, and smoother long-term mastery growth expand the original progression foundation.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Progressive CE Reserves & Physical Enhancement</h3></div><p>Max CE develops with the Sorcerer, including individual reserve variation and Potential influence, while Physical Enhancement uses a more deliberate physical/kinetic defensive balance.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Natural Awakening</h3></div><p>Ordinary brothers can manifest as Sorcerers through several dangerous combat and campaign situations, including lethal survival, protection, vengeance, last-stand, desperate-victory, guided, and breaking-point paths.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Sorcerer recruits in ordinary campaigns</h3></div><p>Rare ordinary settlement recruits can already be Sorcerers, with company progression influencing how experienced those generated Sorcerers may be. Ordinary recruitment never produces a starting Master Sorcerer.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Optional Legends compatibility improvements</h3></div><p>Cursed Barrage has targeted optional support for relevant Legends unarmed mechanics while JJKCE remains usable without Legends as a hard dependency.</p></article>
-<article class="card"><div class="top"><span class="tag done">Published</span><h3>v0.21.12 stabilization</h3></div><p>The release also includes save-state, tier-integrity, Modern Hooks, generated-recruit, skill-container, UI, artwork, and compatibility stabilization accumulated since the first public alpha.</p></article>
+<article class="card"><div class="top"><span class="tag done">Available</span><h3>Deeper Sorcerer progression</h3></div><p>Potential, Learning Rate, Tier Mastery, automatic normal Tier advancement, Advancement Credit, progressive CE Reserves, and Physical Enhancement extend the original alpha foundation.</p></article>
+<article class="card"><div class="top"><span class="tag done">Available</span><h3>Natural Awakening & ordinary-campaign Sorcerers</h3></div><p>Ordinary brothers can awaken through dangerous situations, and rare ordinary settlement recruits can already be Sorcerers with reconstructed progression history.</p></article>
+<article class="card"><div class="top"><span class="tag done">Available</span><h3>Cursed Damage Framework</h3></div><p>The internal combat layer now distinguishes physical, CE-infused, cursed-technique, future cursed-tool, and explicit special damage semantics without changing ordinary vanilla targets.</p></article>
+<article class="card"><div class="top"><span class="tag done">Hotfix</span><h3>Generated Sorcerer Tier stabilization</h3></div><p>Generated Sorcerers now settle their Tier state before validation, with a narrow repair path for previously generated Sorcerers missing their persisted valid Tier.</p></article>
+<article class="card"><div class="top"><span class="tag done">Hotfix</span><h3>Tactical UI stabilization</h3></div><p>The delayed tactical debug refresh that could replay stale unit-panel state during combat has been removed from normal combat updates.</p></article>
+<article class="card"><div class="top"><span class="tag done">Compatibility</span><h3>Optional Legends armor support</h3></div><p>The Newly Awakened origin now uses Legends' normal layered body-armor construction when available while retaining the original vanilla fallback without Legends.</p></article>
 </div>
 </section>
 <section>
 <h2>Current development & what comes next</h2>
-<div class="phase">Active development</div>
+<div class="phase">Next major milestone</div>
 <div class="grid">
-<article class="card"><div class="top"><span class="tag now">In development</span><h3>v0.22 — Cursed Damage Framework</h3></div><p>Establish curse-valid versus ordinary physical damage semantics, with CE-infused attacks and cursed techniques providing the combat foundation required before true curse enemies enter the game.</p></article>
-<article class="card"><div class="top"><span class="tag now">Stabilizing</span><h3>Sorcerer & compatibility regression work</h3></div><p>Current development also includes focused generated-Sorcerer tier/progression stabilization and additional optional compatibility work while the new combat foundation is verified.</p></article>
+<article class="card"><div class="top"><span class="tag planned">Planned next</span><h3>v0.23 — Basic Curse Ecosystem</h3></div><p>Add the first actual pure curse enemies using the published damage-validity foundation, then connect exorcism, supernatural combat behavior, Pressure, Insight, and rewards.</p></article>
+<article class="card"><div class="top"><span class="tag now">Ongoing</span><h3>Post-release stabilization & verification</h3></div><p>Focused regression remains useful for generated-Sorcerer Tier repair, tactical UI stability, optional Legends compatibility, persistence, and the published Cursed Damage Framework. Publication does not automatically mark those checks Verified.</p></article>
 </div>
 <div class="phase">Near-term supernatural world</div>
 <div class="grid">
-<article class="card"><div class="top"><span class="tag planned">Planned</span><h3>First pure curse enemies & perception</h3></div><p>Actual curse enemies, supernatural combat behavior, and the dedicated awareness/perception layer remain future work. Existence, visibility, awareness, and the ability to damage curses will be treated as distinct concepts.</p></article>
-<article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Cursed tools & supernatural campaign content</h3></div><p>Cursed tools, exorcism, supernatural contracts and rumors, cursed-object recovery, world consequences, and meaningful non-Sorcerer contribution will connect the combat and campaign layers.</p></article>
+<article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Curse perception</h3></div><p>Existence, awareness, individual perception, visibility, and ability to damage curses will become separate tactical concepts rather than one global visibility switch.</p></article>
+<article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Cursed tools & supernatural campaign content</h3></div><p>Cursed tools, exorcism contracts, supernatural rumors, cursed-object recovery, world consequences, and meaningful non-Sorcerer contribution will connect the combat and campaign layers.</p></article>
 <article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Hidden jujutsu institutions</h3></div><p>European hidden orders and institutions are planned to support training, exorcism work, information, relic identification, teachers, factions, and political tension.</p></article>
 <article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Hostile Sorcerers & Curse Users</h3></div><p>Hostile supernatural humans, rival orders, outlaw Sorcerers, Curse Users, and related campaign encounters remain part of the later cursed-world expansion.</p></article>
 </div>
@@ -99,10 +99,10 @@
 </section>
 <section id="community">
 <h2>Player Requests / Community Ideas</h2>
-<p class="note">Community feedback can influence the roadmap. <strong>Accepted</strong> means the direction has been adopted for future development; it does not guarantee a specific release date. Ideas still being evaluated are labeled separately rather than presented as promises.</p>
+<p class="note">Community feedback can influence the roadmap. <strong>Accepted</strong> means the direction has been adopted for future development; it does not guarantee a specific release date.</p>
 <div class="idea-grid">
 <article class="idea"><div class="top"><span class="tag accepted">Accepted</span><h3>Avatar / Player Character Sorcerer origin</h3></div><p>A future origin centered explicitly on the player's own Sorcerer avatar rather than treating the starting Sorcerer as only another company member.</p><div class="small">Planned for a later origin-expansion phase.</div></article>
-<article class="idea"><div class="top"><span class="tag done">Implemented</span><h3>Obtain Sorcerers in ordinary campaigns</h3></div><p>Rare generated Sorcerer recruits and natural awakening opportunities are now part of the public mod, so the supernatural layer is no longer structurally locked to one origin.</p><div class="small">Available in v0.21.12.</div></article>
+<article class="idea"><div class="top"><span class="tag done">Implemented</span><h3>Obtain Sorcerers in ordinary campaigns</h3></div><p>Rare generated Sorcerer recruits and natural awakening opportunities are part of the public mod, so the supernatural layer is no longer structurally locked to one origin.</p><div class="small">Available in the current public release.</div></article>
 <article class="idea"><div class="top"><span class="tag accepted">Accepted</span><h3>Optional major-mod compatibility</h3></div><p>Deeper compatibility work for Legends and optional support targets including RotU, PoV, and NgGH without turning them into hard dependencies.</p><div class="small">Planned later as JJKCE expands.</div></article>
 </div>
 <div class="community-panel">
