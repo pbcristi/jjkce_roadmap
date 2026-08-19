@@ -19,7 +19,7 @@
 <div class="status">
 <div class="box"><span class="label">Current public release</span><strong>v0.22.1</strong></div>
 <div class="box"><span class="label">Current focus</span><strong>v0.23 Basic Curse Ecosystem</strong></div>
-<div class="box"><span class="label">Roadmap state</span><strong>v0.22.1 published · v0.23 planned</strong></div>
+<div class="box"><span class="label">Roadmap state</span><strong>v0.22.1 published · v0.23 in development</strong></div>
 </div>
 </div></header>
 <main class="wrap">
@@ -33,22 +33,23 @@
 <li>Generated Sorcerer Tier initialization has been stabilized, including a narrow repair path for missing persisted generated tiers.</li>
 <li>The tactical character panel/hotbar refresh path has been hardened against stale delayed updates.</li>
 <li>The Newly Awakened origin has targeted Legends starting-body-armor compatibility while preserving the vanilla fallback.</li>
-<li>The Cursed Damage Framework now distinguishes ordinary physical attacks from CE-infused and cursed-technique damage for future supernatural targets.</li>
+<li>The Cursed Damage Framework distinguishes ordinary physical attacks from CE-infused and cursed-technique damage for supernatural targets.</li>
 <li>Development/debug menus are disabled in the public configuration.</li>
 </ul>
 </div>
 <div class="current">
-<div class="version">Published foundation · v0.22</div>
-<h3>Cursed Damage Framework</h3>
-<p>The curse-valid damage layer is now part of the public mod. It keeps ordinary Battle Brothers targets on the vanilla damage path while providing explicit semantics for future supernatural targets.</p>
+<div class="version">Current development · v0.23</div>
+<h3>Something Is Here — Basic Curse Ecosystem</h3>
+<p>The first pure curse and curse-perception layer are now implemented in development source and are undergoing verification before release. They are not part of the current downloadable v0.22.1 package.</p>
 <ul>
-<li>Ordinary physical damage is distinct from CE-infused and cursed-technique damage.</li>
-<li>Cursed Infusion validates its qualifying direct attack rather than creating an extra damage packet.</li>
-<li>Cursed Strike, Cursed Barrage, and attacks under Focused Impact have explicit cursed-technique semantics.</li>
-<li>Actual pure curse enemies and the full curse-perception system are not included yet.</li>
+<li><strong>Lauerling</strong> is the first pure curse archetype: a small passive observer born from the fear that something unseen is watching.</li>
+<li>Its combat identity centers on watching rather than hunting, defensive Tendril Lash attacks, and relocation after ranged pressure.</li>
+<li>Curse perception is being separated into individual awareness, supernatural sensing, remembered information, and actual damage validity.</li>
+<li><strong>Something Is Here</strong> introduces supernatural unease for ordinary humans who cannot yet perceive the nearby curse.</li>
+<li>World-map observer behavior, proximity-based <strong>Being Watched</strong>, tactical continuity, pure-curse death presentation, and vanilla battle-resolution compatibility are part of the current implementation pass.</li>
 </ul>
 </div>
-<p class="note"><strong>Current state:</strong> v0.22.1 is published. The next major milestone is the first Basic Curse Ecosystem.</p>
+<p class="note"><strong>Current state:</strong> v0.22.1 remains the public release. v0.23 is implemented in development source and is now in focused verification/stabilization before publication.</p>
 </section>
 <section>
 <h2>Established public foundation</h2>
@@ -66,22 +67,22 @@
 <div class="grid">
 <article class="card"><div class="top"><span class="tag done">Available</span><h3>Deeper Sorcerer progression</h3></div><p>Potential, Learning Rate, Tier Mastery, automatic normal Tier advancement, Advancement Credit, progressive CE Reserves, and Physical Enhancement extend the original alpha foundation.</p></article>
 <article class="card"><div class="top"><span class="tag done">Available</span><h3>Natural Awakening & ordinary-campaign Sorcerers</h3></div><p>Ordinary brothers can awaken through dangerous situations, and rare ordinary settlement recruits can already be Sorcerers with reconstructed progression history.</p></article>
-<article class="card"><div class="top"><span class="tag done">Available</span><h3>Cursed Damage Framework</h3></div><p>The internal combat layer now distinguishes physical, CE-infused, cursed-technique, future cursed-tool, and explicit special damage semantics without changing ordinary vanilla targets.</p></article>
+<article class="card"><div class="top"><span class="tag done">Available</span><h3>Cursed Damage Framework</h3></div><p>The internal combat layer distinguishes physical, CE-infused, cursed-technique, future cursed-tool, and explicit special damage semantics without changing ordinary vanilla targets.</p></article>
 <article class="card"><div class="top"><span class="tag done">Hotfix</span><h3>Generated Sorcerer Tier stabilization</h3></div><p>Generated Sorcerers now settle their Tier state before validation, with a narrow repair path for previously generated Sorcerers missing their persisted valid Tier.</p></article>
 <article class="card"><div class="top"><span class="tag done">Hotfix</span><h3>Tactical UI stabilization</h3></div><p>The delayed tactical debug refresh that could replay stale unit-panel state during combat has been removed from normal combat updates.</p></article>
-<article class="card"><div class="top"><span class="tag done">Compatibility</span><h3>Optional Legends armor support</h3></div><p>The Newly Awakened origin now uses Legends' normal layered body-armor construction when available while retaining the original vanilla fallback without Legends.</p></article>
+<article class="card"><div class="top"><span class="tag done">Compatibility</span><h3>Optional Legends armor support</h3></div><p>The Newly Awakened origin uses Legends' normal layered body-armor construction when available while retaining the original vanilla fallback without Legends.</p></article>
 </div>
 </section>
 <section>
 <h2>Current development & what comes next</h2>
-<div class="phase">Next major milestone</div>
+<div class="phase">Current major milestone</div>
 <div class="grid">
-<article class="card"><div class="top"><span class="tag planned">Planned next</span><h3>v0.23 — Basic Curse Ecosystem</h3></div><p>Add the first actual pure curse enemies using the published damage-validity foundation, then connect exorcism, supernatural combat behavior, Pressure, Insight, and rewards.</p></article>
-<article class="card"><div class="top"><span class="tag now">Ongoing</span><h3>Post-release stabilization & verification</h3></div><p>Focused regression remains useful for generated-Sorcerer Tier repair, tactical UI stability, optional Legends compatibility, persistence, and the published Cursed Damage Framework. Publication does not automatically mark those checks Verified.</p></article>
+<article class="card"><div class="top"><span class="tag now">In verification</span><h3>v0.23 — Basic Curse Ecosystem</h3></div><p>The first pure curse, Lauerling, and the first tactical/world curse-perception architecture are implemented in development source. The current focus is runtime verification, balance, perception behavior, persistence, and integration stability before release.</p></article>
+<article class="card"><div class="top"><span class="tag now">Ongoing</span><h3>Post-release stabilization & verification</h3></div><p>Focused regression remains useful for generated-Sorcerer Tier repair, tactical UI stability, optional Legends compatibility, persistence, the published Cursed Damage Framework, and the new curse ecosystem. Publication does not automatically mark those checks Verified.</p></article>
 </div>
 <div class="phase">Near-term supernatural world</div>
 <div class="grid">
-<article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Curse perception</h3></div><p>Existence, awareness, individual perception, visibility, and ability to damage curses will become separate tactical concepts rather than one global visibility switch.</p></article>
+<article class="card"><div class="top"><span class="tag now">In development</span><h3>Curse perception</h3></div><p>Existence, individual awareness, direct perception, CE sensing, remembered information, and ability to damage curses are being separated into distinct tactical concepts rather than one global visibility switch.</p></article>
 <article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Cursed tools & supernatural campaign content</h3></div><p>Cursed tools, exorcism contracts, supernatural rumors, cursed-object recovery, world consequences, and meaningful non-Sorcerer contribution will connect the combat and campaign layers.</p></article>
 <article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Hidden jujutsu institutions</h3></div><p>European hidden orders and institutions are planned to support training, exorcism work, information, relic identification, teachers, factions, and political tension.</p></article>
 <article class="card"><div class="top"><span class="tag planned">Planned</span><h3>Hostile Sorcerers & Curse Users</h3></div><p>Hostile supernatural humans, rival orders, outlaw Sorcerers, Curse Users, and related campaign encounters remain part of the later cursed-world expansion.</p></article>
